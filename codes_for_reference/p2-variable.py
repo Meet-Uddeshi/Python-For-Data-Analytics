@@ -45,13 +45,18 @@
 
 # print(f"here are your details: {f_name} {l_name} {age} {phone_number} {marks}")
 
-full_name = input("Enter your full name: ")
-date_of_birth = input("Enter your date of birth: ")
-address = input("Enter your address: ")
-aadhar_card_number = input("Enter your aadhar card number: ")
-pan_card_number = input("Enter your pan card number: ")
-driving_licence = input("Enter your driving licence: ")
-
-print(f"your personal details are: {full_name}{date_of_birth}{address}{aadhar_card_number}{pan_card_number}{driving_licence}")
+# full_name = input("Enter your full name: ")
+# date_of_birth = input("Enter your date of birth: ")
+# address = input("Enter your address: ")
+# aadhar_card_number = input("Enter your aadhar card number: ")
+# pan_card_number = input("Enter your pan card number: ")
+# driving_licence = input("Enter your driving licence: ")
+#
+# print(f"your full name is: {full_name}\n"
+#       f"your date of birth is:{date_of_birth}\n"
+#       f"your address is:{address}\n"
+#       f"your addhar number is{aadhar_card_number}\n"
+#       f"your pan number is:{pan_card_number}\n"
+#       f"your driving number is: {driving_licence}")
 
 

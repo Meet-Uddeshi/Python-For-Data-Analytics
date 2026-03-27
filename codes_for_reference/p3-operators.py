@@ -29,9 +29,20 @@
 #
 # print("The average for the input is ",average)
 
-age = int(input("Enter Your age upto 65: "))
-if age == 18:
-    print("You are eligible for licence")
-else:
-    print("You are not eligible for licence")
+# age = int(input("Enter Your age upto 65: "))
+# if age == 18:
+#     print("You are eligible for licence")
+# else:
+#     print("You are not eligible for licence")
 
+# marks = float(input("Enter your marks: "))
+# if marks >= 80 and marks <= 100:
+#     print("Grade = A+")
+# if marks >= 70 and marks <= 80:
+#     print("Grade = A")
+# if marks >= 60 and marks <= 70:
+#     print("Grade = B")
+# if marks >= 30 and marks <= 60:
+#     print("Grade = C")
+# elif marks >= 0 and marks <= 30:
+#     print("Grade = Fail")

@@ -14,13 +14,13 @@
 # minus = first_number - second_number
 # multiply = first_number * second_number
 # divide = first_number / second_number
-# modulae = first_number % second_number
+# modulo = first_number % second_number
 #
 # print("the addition of two numbers",add,"which you typed")
 # print("the subtraction of two numbers",minus)
 # print("the multiplication of two numbers",multiply)
 # print("the division of two numbers",divide)
-# print("the modulo of two numbers",modulae)
+# print("the modulo of two numbers",modulo)
 #
 # first_number = float(input("Enter the first number: "))
 # second_number = float(input("Enter the second number: "))

@@ -9,9 +9,9 @@
 # var_3=999999
 # var_4=True
 # var_5=35.6
-var_6='@'
+#var_6='@'
 
-print("Value of variable 6 is ",var_6 ,"Hardik")
+#print("Value of variable 6 is ",var_6 ,"Hardik")
 
 # (\n) new line,paragraph(\t),r string, f string, input function:
 # print("Hello\nHie")
@@ -44,4 +44,14 @@ print("Value of variable 6 is ",var_6 ,"Hardik")
 # marks = float(input("Enter your marks: "))
 
 # print(f"here are your details: {f_name} {l_name} {age} {phone_number} {marks}")
+
+full_name = input("Enter your full name: ")
+date_of_birth = input("Enter your date of birth: ")
+address = input("Enter your address: ")
+aadhar_card_number = input("Enter your aadhar card number: ")
+pan_card_number = input("Enter your pan card number: ")
+driving_licence = input("Enter your driving licence: ")
+
+print(f"your personal details are: {full_name}{date_of_birth}{address}{aadhar_card_number}{pan_card_number}{driving_licence}")
+
 

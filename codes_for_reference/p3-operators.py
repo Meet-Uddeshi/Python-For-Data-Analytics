@@ -7,7 +7,7 @@
 # !=  Not equals
 # ===  will compare value, data and datatype but it's generally not used now.
 
-
+#
 # first_number = float(input("Enter the first number: "))
 # second_number = float(input("Enter the second number: "))
 # add = first_number + second_number
@@ -15,7 +15,8 @@
 # multiply = first_number * second_number
 # divide = first_number / second_number
 # modulo = first_number % second_number
-#
+
+# print("the modulo of two numbers",modulo)
 # print("the addition of two numbers",add,"which you typed")
 # print("the subtraction of two numbers",minus)
 # print("the multiplication of two numbers",multiply)
@@ -46,3 +47,8 @@
 #     print("Grade = C")
 # elif marks >= 0 and marks <= 30:
 #     print("Grade = Fail")
+
+# first_number = float(input("Enter the first number: "))
+# second_number = float(input("Enter the second number: "))
+# modulo = first_number % second_number
+# print("the modulo of two numbers",modulo)

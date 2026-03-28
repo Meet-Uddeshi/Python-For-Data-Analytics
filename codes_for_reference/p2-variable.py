@@ -59,4 +59,3 @@
 #       f"your pan number is:{pan_card_number}\n"
 #       f"your driving number is: {driving_licence}")
 
-

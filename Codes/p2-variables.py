@@ -26,3 +26,19 @@ v7 = 741
 
 print ("value of variable 7", v7)
 #if using f- string then use {variable} and if not then use ,
+
+#practices
+#form
+f_name = input("enter your name: ")
+l_name = input("enter your last name: ")
+contact = int(input("enter your contact number: "))
+aadhar = int(input("enter your aadhar number: "))
+age = int(input("enter your age: "))
+address = input("enter your address: ")
+
+print(f"here is your details- {f_name}, {l_name}, {contact}, {aadhar}, {age}, {address}")
+
+print (f"here is your details- {f_name},\n {l_name},\n {contact},\n {aadhar},\n {age},\n {address}")
+
+
+

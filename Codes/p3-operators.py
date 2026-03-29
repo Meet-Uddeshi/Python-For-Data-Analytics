@@ -30,9 +30,37 @@
 #conditions
 # syntax: if varible_name <,>,= :
 
-age= int(input("what is your age"))
+ age= int(input("what is your age"))
 
 if age >= 18 and age <= 65:
-  print("you are eligible for licence")
-else :
-  print("you are not eligible for licence")
+   print("you are eligible for licence")
+ else :
+   print("you are not eligible for licence")
+
+name = input("Enter your name: ")
+marks = int(input("Enter your marks: "))
+
+if marks >= 90:
+    grade = "A"
+
+if marks >= 80 and marks < 90:
+    grade = "B"
+
+if marks >= 70 and marks < 80:
+    grade = "C"
+
+if marks >= 60 and marks < 70:
+    grade = "D"
+
+if marks < 60:
+    grade = "F"
+
+print(f"Student Name : {name}")
+print(f"Marks        : {marks}")
+print(f"Grade        : {grade}")
+
+if marks < 60:
+    print("You failed, please study harder!")
+
+if marks >= 60:
+    print("Congratulations, you passed!")

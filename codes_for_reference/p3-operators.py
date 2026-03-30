@@ -7,6 +7,7 @@
 # !=  Not equals
 # ===  will compare value, data and datatype but it's generally not used now.
 
+
 #
 # first_number = float(input("Enter the first number: "))
 # second_number = float(input("Enter the second number: "))
@@ -37,15 +38,15 @@
 #     print("You are not eligible for licence")
 
 # marks = float(input("Enter your marks: "))
-# if marks >= 80 and marks <= 100:
+# if ((marks >= 80) or (marks <= 100)):
 #     print("Grade = A+")
-# if marks >= 70 and marks <= 80:
+# elif marks >= 70 and marks <= 80:
 #     print("Grade = A")
-# if marks >= 60 and marks <= 70:
+# elif marks >= 60 and marks <= 70:
 #     print("Grade = B")
-# if marks >= 30 and marks <= 60:
+# elif marks >= 30 and marks <= 60:
 #     print("Grade = C")
-# elif marks >= 0 and marks <= 30:
+# else :
 #     print("Grade = Fail")
 
 # first_number = float(input("Enter the first number: "))

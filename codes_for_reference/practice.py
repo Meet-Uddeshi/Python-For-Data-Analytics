@@ -64,15 +64,20 @@
 # else:
 #     print("Not a Leap Year")
 #
-# indian = input("Are you Indian: ")
-# pancard_holder = input("Are you Pancard Holder: ")
-# income = int(input("How much is your income: "))
-# if (indian == "yes"):
-#     if (pancard_holder == "yes"):
-#         if (income > 500000):
-#         else:
-#             print("You are eligible to pay the tax")
-#     else:
-#         print("You are not eligible to pay the tax")
-# else:
-#     print("You are not eligible to pay the tax")
+indian = input("Are you Indian: ")
+pancard_holder = input("Are you Pancard Holder: ")
+income = float(input("How much is your income: "))
+print("The details of elgibility for taxation is as follows: \n"
+      f"Are you Indian:{indian}\n"
+      f"Are you Pancard Holder:{pancard_holder}\n"
+      f"How much is your income:{income}")
+if (indian == "yes"):
+    if (pancard_holder == "yes"):
+        if (income > 500000):
+            print("You are eligible to pay the tax")
+        else:
+            print("You are not eligible to pay the tax")
+    else:
+        print("You are not eligible to pay the tax")
+else:
+    print("You are not eligible to pay the tax")

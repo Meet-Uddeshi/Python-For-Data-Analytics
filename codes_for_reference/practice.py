@@ -18,6 +18,7 @@
 #     print("unhealthy")
 # else:
 #     print("obbese")
+from os import access
 
 # number_1 = int(input("Enter first number: "))
 # number_2 = int(input("Enter second number: "))
@@ -96,3 +97,53 @@
 #         print("You are underweight")
 #     else:
 #         print("You are normal")
+#
+# ticket_holder = input("Enter if you are a ticket holder(y/n): ")
+# id_holder = input("Enter if you hold a valid ID(y/n): ")
+# baggage_limit = int(input("Enter baggage weight(kgs): "))
+# if ticket_holder == "y":
+#     print("buy ticket first to travel")
+#     if id_holder == "y":
+#         if baggage_limit   <= 50:
+#             print("you are eligible to travel")
+#         else:
+#             print("Please pay extra amount for luggage")
+#     else:
+#         print("You donot hold a valid ID so not eligible to travel")
+# else:
+#     print("Please buy a ticket to travel")
+
+
+#if first input doesnt fulfill the condition it should directly prompt else (end)
+#boolean
+
+# registeration = input("Enter if you are a registered(y/n): ")
+# insurance = input("Enter if you have insurance(y/n): ")
+# doctor_available = input("Doctor availibility(y/n): ")
+# if registeration == "y":
+#     if insurance == "y":
+#         if doctor_available == "y":
+#             print("you can be admitted")
+#         else:
+#             print("Please come once doctor is available")
+#     else:
+#         print("Please buy an insurance")
+# else:
+#     print("Please get registered first")
+
+# active_plan = input("Do you have any active plan(y/n)?: ")
+# payment_status = input("Plan amount (paid/un-paid)?: ")
+# if active_plan == "y":
+#     if payment_status == "paid":
+#         print("you are platinum member")
+#     else:
+#         print("you are free member")
+# else:
+#     print("buy a membership plan")
+
+
+
+
+
+
+

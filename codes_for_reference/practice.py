@@ -63,21 +63,36 @@
 #         print("Not a Leap Year")
 # else:
 #     print("Not a Leap Year")
-#
-indian = input("Are you Indian: ")
-pancard_holder = input("Are you Pancard Holder: ")
-income = float(input("How much is your income: "))
-print("The details of elgibility for taxation is as follows: \n"
-      f"Are you Indian:{indian}\n"
-      f"Are you Pancard Holder:{pancard_holder}\n"
-      f"How much is your income:{income}")
-if (indian == "yes"):
-    if (pancard_holder == "yes"):
-        if (income > 500000):
-            print("You are eligible to pay the tax")
-        else:
-            print("You are not eligible to pay the tax")
-    else:
-        print("You are not eligible to pay the tax")
-else:
-    print("You are not eligible to pay the tax")
+# #
+# indian = input("Are you Indian: ")
+# pancard_holder = input("Are you Pancard Holder: ")
+# income = float(input("How much is your income: "))
+# print("The details of elgibility for taxation is as follows: \n"
+#       f"Are you Indian:{indian}\n"
+#       f"Are you Pancard Holder:{pancard_holder}\n"
+#       f"How much is your income:{income}")
+# if (indian == "yes"):
+#     if (pancard_holder == "yes"):
+#         if (income > 500000):
+#             print("You are eligible to pay the tax")
+#         else:
+#             print("You are not eligible to pay the tax")
+#     else:
+#         print("You are not eligible to pay the tax")
+# else:
+#     print("You are not eligible to pay the tax")
+
+# weight = int(input("Enter your weight (kgs): "))
+# height = int(input("Enter your height(meters): "))
+# BMI = weight / (height ** 2)
+# any_disease = input("Do you have any disease?: ")
+# if (any_disease=="yes"):
+#     if (BMI> 18.5):
+#         print("You are underweight")
+#     else:
+#         print("You are normal")
+# else:
+#     if (BMI> 25):
+#         print("You are underweight")
+#     else:
+#         print("You are normal")

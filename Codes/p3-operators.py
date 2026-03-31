@@ -70,23 +70,93 @@
 #     print(f"{city} is cold today")
 
 #if - else
-name= "meet"
-aadhar_no= 135678
-phone_no= 9173359036
-licence_no= 456789
+# name= "meet"
+# aadhar_no= 135678
+# phone_no= 9173359036
+# licence_no= 456789
+#
+#
+# if(aadhar_no== 1235678):
+#     if(name== "meet"):
+#         if(phone_no== 9173359036):
+#             print("you are verified")
+#         else:
+#             print("your number is not linked")
+#     else:
+#        print("your name is inappropriate")
+#
+# else:                                      #nested_if - if(condition):
+#     if(licence_no== 45789):                              #if(condition):
+#       print("check your aadhar")                            #else:
+#     else:                                                       #print()
+#         print("your licence number is inappropriate")
 
+#online shopping
+# item= input("is item available?: ")
+# payment= input("is payment done?: ")
+# address= input("Enter an address: ")
+#
+# if item == "yes":
+#     if(payment == "yes"):
+#         if address == "ahmedabad":
+#          print("item is available")
+#         else:
+#             print("we dont deliver here.")
+#     else:
+#         print("please make a payment.")
+#
+# else:
+#    print("we will get back to you once the item is available.")
 
-if(aadhar_no== 1235678):
-    if(name== "meet"):
-        if(phone_no== 9173359036):
-            print("you are verified")
+#job hiring
+degree = input("do you have degree?: ")
+experience = input("do you have experience?: ")
+interview_score = 70
+
+if degree == "yes":
+    if experience == "yes":
+        if interview_score >= 70:
+            print("Hired")
         else:
-            print("your number is not linked")
+            print("Interview failed")
     else:
-       print("your name is inappropriate")
+        print("Not enough experience")
+else:
+    print("Degree required")
+    #interview score error
 
-else:                                      #nested_if - if(condition):
-    if(licence_no== 45789):                              #if(condition):
-      print("check your aadhar")                            #else:
-    else:                                                       #print()
-        print("your licence number is inappropriate")
+#
+# #same exp. with diff sytax
+# has_degree = input("Do you have a degree (yes/no): ")
+#
+# if has_degree == "yes":
+#     experience = int(input("Enter your experience: "))
+#
+#     if experience >= 2:
+#         interview_score = int(input("Enter interview score: "))
+#
+#         if interview_score >= 70:
+#             print("Hired")
+#         else:
+#             print("Interview failed")
+#     else:
+#         print("Not enough experience")
+# else:
+#     print("Degree required")
+#
+# # College Admission
+# passed_12th = True
+# marks = 85
+# cutoff = 80
+# documents_submitted = True
+#
+# if passed_12th:
+#     if marks >= cutoff:
+#         if documents_submitted:
+#             print("Admission granted")
+#         else:
+#             print("Submit documents")
+#     else:
+#         print("Marks below cutoff")
+# else:
+#     print("Not eligible for admission")

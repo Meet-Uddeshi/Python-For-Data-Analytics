@@ -28,7 +28,7 @@
 #print ("average of number1, number2, number3, number4: ", avg)
 
 #conditions
-# syntax: if varible_name <,>,= :
+# syntax: if varible_name <,>, ==, !=, =>, <= :
 
 #  age= int(input("what is your age"))
 #
@@ -54,27 +54,39 @@
 #
 # if marks < 60:
 #     grade = "F"
-#
-# print(f"Student Name : {name}")
-# print(f"Marks        : {marks}")
-# print(f"Grade        : {grade}")
-#
-# if marks < 60:
-#     print("You failed, please study harder!")
-#
-# if marks >= 60:
-#     print("Congratulations, you passed!")
 
 #another-example
 
-city = input("Enter your city: ")
-temperature =int(input("Enter temperature: "))
+# city = input("Enter your city: ")
+# temperature =int(input("Enter temperature: "))
+#
+# if temperature >= 40:
+#     print(f"{city} is very hot today")
+#
+# elif temperature >= 25 and temperature < 40:
+#     print(f"{city} is warm today")
+#
+# else:
+#     print(f"{city} is cold today")
 
-if temperature >= 40:
-    print(f"{city} is very hot today")
+#if - else
+name= "meet"
+aadhar_no= 135678
+phone_no= 9173359036
+licence_no= 456789
 
-if temperature >= 25 and temperature < 40:
-    print(f"{city} is warm today")
 
-if temperature < 25:
-    print(f"{city} is cold today")
+if(aadhar_no== 1235678):
+    if(name== "meet"):
+        if(phone_no== 9173359036):
+            print("you are verified")
+        else:
+            print("your number is not linked")
+    else:
+       print("your name is inappropriate")
+
+else:                                      #nested_if - if(condition):
+    if(licence_no== 45789):                              #if(condition):
+      print("check your aadhar")                            #else:
+    else:                                                       #print()
+        print("your licence number is inappropriate")

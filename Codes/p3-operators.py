@@ -92,12 +92,12 @@
 #         print("your licence number is inappropriate")
 
 #online shopping
-# item= input("is item available?: ")
+# item= bool(input("is item available?: (true/false) "))
 # payment= input("is payment done?: ")
 # address= input("Enter an address: ")
 #
-# if item == "yes":
-#     if(payment == "yes"):
+# if item:
+#     if payment == "yes":
 #         if address == "ahmedabad":
 #          print("item is available")
 #         else:
@@ -108,33 +108,13 @@
 # else:
 #    print("we will get back to you once the item is available.")
 
-#job hiring
-degree = input("do you have degree?: ")
-experience = input("do you have experience?: ")
-interview_score = 70
-
-if degree == "yes":
-    if experience == "yes":
-        if interview_score >= 70:
-            print("Hired")
-        else:
-            print("Interview failed")
-    else:
-        print("Not enough experience")
-else:
-    print("Degree required")
-    #interview score error
-
+# #job hiring
+# degree = input("do you have degree?: ")
+# experience = input("do you have experience?: ")
+# interview_score = int(input("whats your interview score?: "))
 #
-# #same exp. with diff sytax
-# has_degree = input("Do you have a degree (yes/no): ")
-#
-# if has_degree == "yes":
-#     experience = int(input("Enter your experience: "))
-#
-#     if experience >= 2:
-#         interview_score = int(input("Enter interview score: "))
-#
+# if degree == "yes":
+#     if experience == "yes":
 #         if interview_score >= 70:
 #             print("Hired")
 #         else:
@@ -143,14 +123,33 @@ else:
 #         print("Not enough experience")
 # else:
 #     print("Degree required")
-#
-# # College Admission
-# passed_12th = True
-# marks = 85
+
+
+#same exp. with diff sytax
+has_degree = input("Do you have a degree (yes/no): ")
+
+if has_degree == "yes":
+    experience = int(input("Enter your experience: "))
+
+    if experience >= 2:
+        interview_score = int(input("Enter interview score: "))
+
+        if interview_score >= 70:
+            print("Hired")
+        else:
+            print("Interview failed")
+    else:
+        print("Not enough experience")
+else:
+    print("Degree required")
+
+# College Admission
+# passed_12th = bool(input("have you passed 12th? (True/False) "))
+# marks = int(input("Marks: "))
 # cutoff = 80
 # documents_submitted = True
 #
-# if passed_12th:
+# if passed_12th == True:
 #     if marks >= cutoff:
 #         if documents_submitted:
 #             print("Admission granted")

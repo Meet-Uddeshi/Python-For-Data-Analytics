@@ -117,19 +117,19 @@ from os import access
 #if first input doesnt fulfill the condition it should directly prompt else (end)
 #boolean
 
-# registeration = input("Enter if you are a registered(y/n): ")
-# insurance = input("Enter if you have insurance(y/n): ")
-# doctor_available = input("Doctor availibility(y/n): ")
-# if registeration == "y":
-#     if insurance == "y":
-#         if doctor_available == "y":
-#             print("you can be admitted")
-#         else:
-#             print("Please come once doctor is available")
-#     else:
-#         print("Please buy an insurance")
-# else:
-#     print("Please get registered first")
+registeration = bool(input("Enter if you are a registered(True/False): "))
+if registeration != True:
+    insurance = bool(input("Enter if you have insurance(True/False): "))
+    if insurance != True:
+        doctor_available = bool(input("Doctor availibility(True/False)): "))
+        if doctor_available != True:
+            print("you can be admitted")
+        else:
+            print("Please come once doctor is available")
+    else:
+        print("Please buy an insurance before admission")
+else:
+    print("Please get registered first")
 
 # active_plan = input("Do you have any active plan(y/n)?: ")
 # payment_status = input("Plan amount (paid/un-paid)?: ")
@@ -141,7 +141,8 @@ from os import access
 # else:
 #     print("buy a membership plan")
 
-
+# n= 11//3
+# print(n)
 
 
 

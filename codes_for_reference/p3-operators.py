@@ -6,6 +6,7 @@
 # ==  will only compare the given value
 # !=  Not equals
 # ===  will compare value, data and datatype but it's generally not used now.
+# // = will return the whole number after the division
 
 
 #

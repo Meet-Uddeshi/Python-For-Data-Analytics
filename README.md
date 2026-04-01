@@ -35,7 +35,10 @@ Create virtual environment
 ```bash
     uv venv
 ```
-
+Activate virtual environment
+```bash
+    ./.venv/Scripts/Activate
+```
 Initialize the project
 
 ```bash

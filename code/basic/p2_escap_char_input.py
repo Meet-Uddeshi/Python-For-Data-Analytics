@@ -18,7 +18,6 @@ var5 = True # BOOLEAN
 
 # Topic: F-string and r-string.
 # F-string: It is used for printing variable value. Syntax,
-# print(f"This is the example of f string {var_name}")
+print(f"This is the example of f string {var_name}")
 # R-string: It is used to ignore escape characters in function. Syntax,
-# print(r,"This is the example of r string where escape character does not affect \n but that will print.")
-
+print(r"This is the example of r string where escape character does not affect \n but that will print.")

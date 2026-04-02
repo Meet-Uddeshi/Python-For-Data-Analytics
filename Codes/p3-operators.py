@@ -126,22 +126,22 @@
 
 
 #same exp. with diff sytax
-has_degree = input("Do you have a degree (yes/no): ")
-
-if has_degree == "yes":
-    experience = int(input("Enter your experience: "))
-
-    if experience >= 2:
-        interview_score = int(input("Enter interview score: "))
-
-        if interview_score >= 70:
-            print("Hired")
-        else:
-            print("Interview failed")
-    else:
-        print("Not enough experience")
-else:
-    print("Degree required")
+# has_degree = input("Do you have a degree (yes/no): ")
+#
+# if has_degree == "yes":
+#     experience = int(input("Enter your experience: "))
+#
+#     if experience >= 2:
+#         interview_score = int(input("Enter interview score: "))
+#
+#         if interview_score >= 70:
+#             print("Hired")
+#         else:
+#             print("Interview failed")
+#     else:
+#         print("Not enough experience")
+# else:
+#     print("Degree required")
 
 # College Admission
 # passed_12th = bool(input("have you passed 12th? (True/False) "))
@@ -159,3 +159,19 @@ else:
 #         print("Marks below cutoff")
 # else:
 #     print("Not eligible for admission")
+
+
+#example 
+registration = bool(input("Enter if you are a registered(True/False): "))
+if not registration:
+    print("Please get registered first")
+else:
+    insurance = bool(input("Enter if you have insurance(True/False): "))
+    if not insurance:
+        print("Please buy an insurance before admission")
+    else:
+        doctor_available = bool(input("Doctor availibility(True/False)): "))
+        if not doctor_available:
+            print("Please come once doctor is available")
+        else:
+            print("You can be admitted.")

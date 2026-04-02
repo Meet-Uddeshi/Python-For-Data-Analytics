@@ -27,12 +27,12 @@ from math import factorial
 #     print(i)
 #     i-=3
 
-i = 1
-fact = 1
-while i <= 50:
-    if i==0 or i==1:
-        fact = 1
-    else:
-        fact = fact*i
-    i=i+1
-print(fact)
+# i = 1
+# fact = 1
+# while i <= 6:
+#     if i==0 or i==1:
+#         fact = 1
+#     else:
+#         fact = fact*i
+#     i=i+1
+# print(fact)

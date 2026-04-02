@@ -1,0 +1,38 @@
+# Loops are used for repetitive task. There are two types of loops entry control and exit control.
+# There are 3 steps in loops to process,
+# 1) Instantaneous variable (loop variable) initialization
+# 2) Instantaneous variable condition check
+# 3) Increment or decrement operators
+from math import factorial
+
+# entry control loops - checks conditions first and then executes
+# exit control loops -  executes first and then checks conditions
+#
+# i = 100
+# while i<=100:
+#     print(i)
+#     i-=1 #i= i+1
+#     if i <= 0:
+#         break
+
+# while = True.it will run infinite times as it wont check the conditions
+#
+# i = 1
+# while i<=100:
+#     print(i)
+#     i*=23
+#
+# i = 1
+# while i<=100:
+#     print(i)
+#     i-=3
+
+i = 1
+fact = 1
+while i <= 50:
+    if i==0 or i==1:
+        fact = 1
+    else:
+        fact = fact*i
+    i=i+1
+print(fact)

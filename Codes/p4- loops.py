@@ -23,13 +23,19 @@
 #     print(i)
 #     i+=17
 
-i=1
-fact=1
-n= int(input("Enter a number: "))
-while i<=n:
-      if n==0 or n==1:
-          fact=1
-      else:
-          fact = fact*i
-      i+=1
-print(fact)
+# i=1
+# fact=1
+# n= int(input("Enter a number: "))
+# while i<=n:
+#       if n==0 or n==1:
+#           fact=1
+#       else:
+#           fact = fact*i
+#       i+=1
+# print(fact)
+
+# i=0
+# while i<=252:
+#     if i%3 == 0:
+#         print(i)
+#     i+=1

@@ -61,7 +61,7 @@ Install dependency
 
 ## Features
 
-- Dashboardingnd 
+- Dashboard and graphical representation
 - Data visualization
 - Automation of data preprocessing and data cleaning
 

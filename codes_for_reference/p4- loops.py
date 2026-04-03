@@ -17,10 +17,13 @@ from math import factorial
 
 # while = True.it will run infinite times as it wont check the conditions
 #
-# i = 1
-# while i<=100:
-#     print(i)
-#     i*=23
+# i = 100
+# while i>=1:
+#     if i % 17 == 0:
+#         print(i)
+#     if i==34:
+#             break
+#     i = i - 1
 #
 # i = 1
 # while i<=100:
@@ -29,10 +32,18 @@ from math import factorial
 
 # i = 1
 # fact = 1
-# while i <= 6:
+# while i <= 50:
 #     if i==0 or i==1:
 #         fact = 1
 #     else:
 #         fact = fact*i
 #     i=i+1
 # print(fact)
+
+day = input("Enter the day: ")
+if (day == "Monday") or (day=="Tuesday") or (day=="Wednesday") or (day=="Thursday") or (day=="Friday"):
+    print("Working Day")
+elif day=="Saturday":
+    print("Weekend Day")
+else :
+    print("Holiday Day")

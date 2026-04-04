@@ -34,8 +34,32 @@
 #       i+=1
 # print(fact)
 
-# i=0
-# while i<=252:
+# i=252
+# while i>=1:
 #     if i%3 == 0:
 #         print(i)
-#     i+=1
+#     i-=1
+
+# days= input("Enter the day: ")
+#
+# if days == ("monday") or days == ("tuesday") or days == ("wednesday") or days == ("thursday") or days == ("friday"):
+#     print ("it's weekday")
+# elif days == ("saturday"):
+#     print ("it's weekend")
+# else:
+#     print ("it's holiday")
+
+while True:
+    ask = input("do we have any student?: ")
+    if ask == "yes":
+     name= input("Enter your name: ")
+     marks= float(input("Enter your marks: "))
+     phone= int(input("Enter your phone number: "))
+     email= input("Enter your email address: ")
+     print ("here are your details: ")
+     print ("name: ",name)
+     print ("marks: ",marks)
+     print ("email: ",phone)
+     print ("address: ",email)
+    else:
+       break

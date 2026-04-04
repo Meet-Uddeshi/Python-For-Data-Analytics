@@ -40,10 +40,26 @@ from math import factorial
 #     i=i+1
 # print(fact)
 
-day = input("Enter the day: ")
-if (day == "Monday") or (day=="Tuesday") or (day=="Wednesday") or (day=="Thursday") or (day=="Friday"):
-    print("Working Day")
-elif day=="Saturday":
-    print("Weekend Day")
-else :
-    print("Holiday Day")
+# day = input("Enter the day: ")
+# if (day == "Monday") or (day=="Tuesday") or (day=="Wednesday") or (day=="Thursday") or (day=="Friday"):
+#     print("Working Day")
+# elif day=="Saturday":
+#     print("Weekend Day")
+# else :
+#     print("Holiday Day")
+
+#While True:
+while True:
+    check_students_details = input("Enter if students details available: ")
+    if check_students_details == "Yes":
+        name = input("Enter name: ")
+        marks = float(input("Enter marks: "))
+        phone_number = int(input("Enter phone number: "))
+        email = input("Enter email: ")
+        print("here are the students details: ")
+        print("Name is: ", name)
+        print("Marks = ", marks)
+        print("phone_number is = ", phone_number)
+        print("email = ", email)
+    else:
+        break

@@ -49,17 +49,19 @@ from math import factorial
 #     print("Holiday Day")
 
 #While True:
-while True:
-    check_students_details = input("Enter if students details available: ")
-    if check_students_details == "Yes":
-        name = input("Enter name: ")
-        marks = float(input("Enter marks: "))
-        phone_number = int(input("Enter phone number: "))
-        email = input("Enter email: ")
-        print("here are the students details: ")
-        print("Name is: ", name)
-        print("Marks = ", marks)
-        print("phone_number is = ", phone_number)
-        print("email = ", email)
-    else:
-        break
+# while True:
+#     check_students_details = input("Enter if students details available: ")
+#     if check_students_details == "Yes":
+#         name = input("Enter name: ")
+#         marks = float(input("Enter marks: "))
+#         phone_number = int(input("Enter phone number: "))
+#         email = input("Enter email: ")
+#         print("here are the students details: ")
+#         print("Name is: ", name)
+#         print("Marks = ", marks)
+#         print("phone_number is = ", phone_number)
+#         print("email = ", email)
+#     else:
+#         break
+# infinity loop - should always use break
+#if limit is defined then no need for break to be updated.

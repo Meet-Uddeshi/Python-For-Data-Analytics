@@ -49,17 +49,44 @@
 # else:
 #     print ("it's holiday")
 
-while True:
-    ask = input("do we have any student?: ")
-    if ask == "yes":
-     name= input("Enter your name: ")
-     marks= float(input("Enter your marks: "))
-     phone= int(input("Enter your phone number: "))
-     email= input("Enter your email address: ")
-     print ("here are your details: ")
-     print ("name: ",name)
-     print ("marks: ",marks)
-     print ("email: ",phone)
-     print ("address: ",email)
-    else:
-       break
+# while True:
+#     ask = input("do we have any student?: ")
+#     if ask == "yes":
+#      name= input("Enter your name: ")
+#      marks= float(input("Enter your marks: "))
+#      phone= int(input("Enter your phone number: "))
+#      email= input("Enter your email address: ")
+#      print ("here are your details: ")
+#      print ("name: ",name)
+#      print ("marks: ",marks)
+#      print ("email: ",phone)
+#      print ("address: ",email)
+#     else:
+#        break
+
+#break - to stop the loop
+# continue- to skip one iteration in loop
+# i=0
+# while i<=100:
+#     if i== 57:
+#         i=i+1
+#         continue
+#     print(i)
+#     i=i+1
+
+#swap values
+# a1 = "aditi"
+# a2 = 123
+# print (a1, a2)
+# a3 = a2
+# a2 = a1
+# a1 = a3
+# print (a1, a2)
+
+#short cut of swapping
+# a1, a2 = 1, 2
+# a1, a2 = a2, a1
+
+#array
+a= ["xyz", "aditi", 1, "madari", 32.68, 1]
+print(a[0], a[1])

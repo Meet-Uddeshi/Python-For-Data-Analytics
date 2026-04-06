@@ -3,6 +3,7 @@
 # 1) Instantaneous variable (loop variable) initialization
 # 2) Instantaneous variable condition check
 # 3) Increment or decrement operators
+# 4) Continue is used to skip the given condition and breaks the iteration and prints the rest
 from math import factorial
 
 # entry control loops - checks conditions first and then executes
@@ -13,7 +14,7 @@ from math import factorial
 #     print(i)
 #     i-=1 #i= i+1
 #     if i <= 0:
-#         break
+#         continue
 
 # while = True.it will run infinite times as it wont check the conditions
 #
@@ -65,3 +66,20 @@ from math import factorial
 #         break
 # infinity loop - should always use break
 #if limit is defined then no need for break to be updated.
+
+# i = 0
+# while i<=100:
+#     if i == 10:
+#         i+=1
+#         continue
+#     print(i)
+#     i += 1
+
+i = 0
+while i<=100:
+    if i % 3 == 0 or i % 5 == 0:
+       i += 1
+       continue
+    print(i)
+    i += 1
+

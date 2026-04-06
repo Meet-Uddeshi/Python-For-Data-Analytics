@@ -171,3 +171,21 @@ from os import access
 #             print("Please come once doctor is available")
 #         else:
 #             print("You can be admitted.")
+
+# principal =float(input("enter the principal:"))
+# rate_of_int = float(input("enter the rate of interest:"))
+# no_of_yrs = float(input("enter the number of years:"))
+# simple_interest = (principal*rate_of_int*no_of_yrs/100)
+# print("the simple interest is",simple_interest)
+
+# #swapping numbers
+# a,b = 25, 30
+# print(a,b)
+# a,b = b, a
+# print(a,b)
+# # print(a,b)# two values at a time
+# # c = a
+# # a=b
+# # b=c
+# # print(a,b)
+

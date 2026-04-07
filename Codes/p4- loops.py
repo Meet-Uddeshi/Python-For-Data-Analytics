@@ -87,6 +87,20 @@
 # a1, a2 = 1, 2
 # a1, a2 = a2, a1
 
-#array
-a= ["xyz", "aditi", 1, "madari", 32.68, 1]
-print(a[0], a[1])
+
+#
+# i=0
+# while i<=498:
+#     if i%2 == 0:
+#         print(i)
+#     i = i + 1
+
+t1= int(input("enter your table:"))
+num= int(input("enter your table limit: "))
+i= 1
+mul = 1
+
+while i<=num:
+    mul = t1*i
+    print (t1, "*", num, "=", mul)
+    i+=1

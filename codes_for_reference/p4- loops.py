@@ -74,12 +74,28 @@ from math import factorial
 #         continue
 #     print(i)
 #     i += 1
+#
+# i = 100
+# while i>=1:
+#     if i % 12 == 0 or i % 23 == 0:
+#        i -= 1
+#        continue
+#     print(i)
+#     i -= 1
+#
+# i = 999
+# while i>=0:
+#     print(i)
+#     i-=2
 
-i = 0
-while i<=100:
-    if i % 3 == 0 or i % 5 == 0:
-       i += 1
-       continue
-    print(i)
-    i += 1
 
+# i  = 1
+# while i<=498:
+#     if i%2==0:
+#         print(i)
+#     i=i+19
+
+#array
+a= ["apple","banana","orange","kiwi"]
+b = len(a)
+print(b)

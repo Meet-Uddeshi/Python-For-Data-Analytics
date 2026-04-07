@@ -18,6 +18,7 @@
 #     print("unhealthy")
 # else:
 #     print("obbese")
+from distutils.command.build_scripts import first_line_re
 from os import access
 
 # number_1 = int(input("Enter first number: "))
@@ -188,4 +189,14 @@ from os import access
 # # a=b
 # # b=c
 # # print(a,b)
+
+# first_number = int(input("Enter the first number: "))
+# second_number = int(input("Enter the second number: "))
+# mul =1
+# i= 1
+#
+# while i<=second_number:
+#     mul = first_number * i
+#     print(f"{first_number}*{i} = {mul}")
+#     i = i + 1
 

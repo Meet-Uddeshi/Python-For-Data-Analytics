@@ -95,7 +95,3 @@ from math import factorial
 #         print(i)
 #     i=i+19
 
-#array
-a= ["apple","banana","orange","kiwi"]
-b = len(a)
-print(b)

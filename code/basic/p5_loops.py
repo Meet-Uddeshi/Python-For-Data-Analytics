@@ -35,6 +35,3 @@ i = 100
 while i>=0:
     print(i)
     i = i - 1
-
-# Exit control loop: Do..while loop is included in this type of loop. Exit control loop must execute st least one time because it execute first and then check condition for instantaneous variable.
-# ---------- Code for exit control loop ----------

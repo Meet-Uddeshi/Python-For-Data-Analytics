@@ -94,4 +94,4 @@
 # if age >= 18 and citizen == "Yes":
 #     print("Eligible to vote")
 # else:
-#     print("Not eligible").
+#     print("Not eligible")..

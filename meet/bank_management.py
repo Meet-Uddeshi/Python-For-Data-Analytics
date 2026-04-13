@@ -3,7 +3,7 @@ print("Welcome to bank Meet")
 while True:
     print("Enter your basic details:")
     name = input("Enter your name: ")
-    age = input("Enter your age: ")
+    age = int(input("Enter your age: "))
     print(f"Welcome to meet bank {name}. Your age is {age}.")
     print("How can I help you ?")
     print("1. Create account \n2. Transactions \n4 Exit")

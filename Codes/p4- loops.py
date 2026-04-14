@@ -95,12 +95,12 @@
 #         print(i)
 #     i = i + 1
 
-t1= int(input("enter your table:"))
-num= int(input("enter your table limit: "))
-i= 1
-mul = 1
-
-while i<=num:
-    mul = t1*i
-    print (t1, "*", num, "=", mul)
-    i+=1
+# t1= int(input("enter your table:"))
+# num= int(input("enter your table limit: "))
+# i= 1
+# mul = 1
+#
+# while i<=num:
+#     mul = t1*i
+#     print (t1, "*", num, "=", mul)
+#     i+=1

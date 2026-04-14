@@ -77,6 +77,7 @@
 # Array element insertion. Array functions append and insert used.
 # k=-1
 # m = [2,3,4,5,6,7,8,9]
+# print(m[2:6:2])
 # while k <= 0:
 #     print(m[k])
 #     k = k-1
@@ -89,8 +90,31 @@
 # m.insert(3,"aditi")   # Insert function/method is used to add new element in array at specific index and if index is not define then this function takes last index by default to add new element in array.
 # print(m)
 
+#: is used to print any of the middle elements.
 
+fruits = ["apple", "banana", "cherry", "date", "elderberry",
+    "fig", "grape", "honeydew", "kiwi", "lemon",
+    "mango", "nectarine", "orange", "papaya", "quince"]
+# # print(fruits[2:15:3])
+# fruits[0]="mango"
+# print(fruits)
 
+# for loop: In  - only used in array iteration used range used for with and without array. its an entry level loop
+#
+# for fruit in fruits:
+#     print(fruits[1:6])
+#     break
+# if you print the loop variable then it will only print the value stored in first iteration.
+# the above example is run in loop wherein the fruit is the loop variable and it will print all the element is the array.
 
+# s = "meet"
+# s[0] = "j"
+# print(s)
 
-
+# for x in range(10,21,2):
+#     print(x)
+# in range for the above example 10 is the starting value 21 till that value and 2 is difference value.the whoile bracket is called as arguement or parameters
+#
+# for fruit in range(len(fruits)):
+#     print(fruits[::-1])
+#     break

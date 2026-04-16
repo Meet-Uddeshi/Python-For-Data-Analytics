@@ -1,4 +1,5 @@
 #array = always starts with 0
+from os import remove
 
 # indexing = len(n)-1
 
@@ -92,9 +93,6 @@
 
 #: is used to print any of the middle elements.
 
-fruits = ["apple", "banana", "cherry", "date", "elderberry",
-    "fig", "grape", "honeydew", "kiwi", "lemon",
-    "mango", "nectarine", "orange", "papaya", "quince"]
 # # print(fruits[2:15:3])
 # fruits[0]="mango"
 # print(fruits)
@@ -118,3 +116,38 @@ fruits = ["apple", "banana", "cherry", "date", "elderberry",
 # for fruit in range(len(fruits)):
 #     print(fruits[::-1])
 #     break
+
+#  append(x): Adds an element to the end.
+#  insert(i, x): Inserts element x at index i.
+#  remove(x): Removes the first occurrence of x.
+# ️ pop([i]): Removes and returns the item at index i (last item by default).
+#  reverse(): Reverses the list in place.
+#  sort(): Sorts the list (ascending by default).
+# copy(obj): Creates a shallow copy. It duplicates the container but keeps references to the original nested items.
+
+
+
+fruits = ["apple", "banana", "cherry", "date", "elderberry",
+    "fig", "grape", "honeydew", "kiwi", "lemon","mango","mango",
+    "mango", "nectarine", "orange", "papaya", "quince"]
+
+# fruits.insert(10, "orange")
+# print(fruits)
+
+# fruits. remove("orange")
+# print(fruits)
+#
+# fruits.pop(10)
+# print(fruits)
+
+# fruits.reverse()
+# print(fruits)
+
+# fruits.sort(reverse=True)
+# print(fruits)
+
+# veg=fruits.copy()
+# print(veg)
+
+
+

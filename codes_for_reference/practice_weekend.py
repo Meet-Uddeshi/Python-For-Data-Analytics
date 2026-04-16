@@ -1,4 +1,4 @@
-# # Q1: Check if a number is positive, negative, or zero
+ # # Q1: Check if a number is positive, negative, or zero
 #
 # number = int(input("Enter the number: "))
 # if number < 0:
@@ -95,3 +95,32 @@
 #     print("Eligible to vote")
 # else:
 #     print("Not eligible")..
+#
+# a = 5
+# b = 10
+#
+# a, b = b, a
+#
+# print("a =", a)
+# print("b =", b)
+
+# n = int(input("Enter N: "))
+# total = 0
+# for i in range(1, n + 1):
+#     total += i
+# print("Sum =", total)
+
+# n = int(input("Enter number: "))
+# for i in range(1, 11):
+#     print(n, "x", i, "=", n * i)
+
+# num = int(input("Enter number: "))
+# rev = 0
+#
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num = num // 10
+#
+# print("Reversed number:", rev)
+

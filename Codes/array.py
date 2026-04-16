@@ -5,6 +5,9 @@
 #length = index+1
 #array allows duplication- length, position, index is countable
 #length- numnber of elements
+from os import remove
+
+from Tools.demo.sortvisu import insertionsort
 
 # Array iterations. For this process must need to use loops. Any operations in array must be applied on array index.
 # i = 0
@@ -93,7 +96,13 @@
 #  11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 #  91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
 # print(i[3::2])
-
+#
+#
+# def aditi(n):
+#     return n/2
+# print(aditi(5))
+#
+#
 #FOR loop
 #IN- can use in array iteration
 #RANGE-can use in array and without array
@@ -107,6 +116,33 @@
 # for i in range(3,20,2): #range-function, (parameters)
 #     print(i)
 
-# def aditi(n):
-#     return n/2
-# print(aditi(5))
+# sort- to set ascending and descending value
+# reverse- to change the visevarse of the values
+# appened- to insert value after last value
+# insert- to insert value on specific position
+# remove- to remove value
+# pop - to remove specific value in particular array
+# copy- to copy array ex: b=a.copy
+
+aditi= ["Alpha", "Bravo", "Charlie", "Delta", "Echo",
+ "Foxtrot", "Golf", "Hotel", "India", "Juliet",
+ "Kilo", "Lima", "Mike", "November", "Oscar",
+ "Papa", "Quebec", "Romeo", "Sierra", "Tango",
+ "Uniform", "Victor", "Whiskey", "X-ray", "Zulu"]
+#
+# aditi.sort(reverse=True)
+# print(aditi)
+#
+# aditi.reverse()
+# print(aditi)
+#
+# aditi.append("Hello")
+# print(aditi)
+#
+# aditi.insert(0,"madari")
+# print(aditi)
+#
+# aditi.pop(3)
+# print(aditi)
+#
+# cutie= aditi.copy()

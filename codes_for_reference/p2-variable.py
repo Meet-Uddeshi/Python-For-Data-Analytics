@@ -21,7 +21,7 @@
 #
 # print(f"{var_1}\n{var_2}\n{var_3}\n{var_4}\n{var_5}\n{var_6}") #f string and new line
 #
-# print(r"\n") #r string used to ignore the f string
+# print(r"\n") #r string used to ignore the escape characters
 #
 # print(r"Use respectful language, generally preferring person-first language (person  a disability") #r string for ignoring escape char
 

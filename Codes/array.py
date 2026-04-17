@@ -108,7 +108,7 @@ from Tools.demo.sortvisu import insertionsort
 #RANGE-can use in array and without array
 # a = ["madari", "aditi", "literature", 12345, 56.90, "mandvi"]
 # for aditi in a :
-#     print(a[1:5:])
+#     print(a[1:5:])  #slicing
 #     break
 # print(aditi)  #if we take instentenious array out of loop then it will print the first value of the array
 # # And if we run instenious array in loop then it will print all the value till the loop iterates
@@ -146,3 +146,32 @@ aditi= ["Alpha", "Bravo", "Charlie", "Delta", "Echo",
 # print(aditi)
 #
 # cutie= aditi.copy()
+#
+# strings
+# it is immutable
+# can't change in run time like array
+# group of character
+
+# a="aditi"
+# print(a[2:4]) #string slicing
+#IN- checks the character in strings in form of true or false
+# a="aditi"
+# print("di" in a)
+
+#count, index, in, upper, lower, title, capitalize, strip, replace and so on....
+# a="aditi"
+# m="madari"
+# print(a+m) #string concatenation
+#
+# a="aditi"
+# print(a.rstrip("ait")
+
+days= input("enter the day: ")
+space_not_day= days.strip()
+lower_case= space_not_day.lower()
+if lower_case == ("monday") or lower_case == ("tuesday") or lower_case == ("wednesday") or lower_case == ("thursday") or lower_case == ("friday"):
+    print("it's weekday")
+elif lower_case == ("saturday"):
+    print("it's weekend")
+else:
+ print("it's holiday")

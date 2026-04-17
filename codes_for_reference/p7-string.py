@@ -21,11 +21,12 @@ b = " Shah"
 # print(a.strip())
  # - only trims first and last characters
 
-
-days = input("Enter a day")
+weekdays = ["monday","tuesday","wednesday","thursday","friday"]
+weekends = ["saturday"]
+holiday = ["sunday"]
+days = input("Enter a day:")
 space_not_day = days.strip()
 lower_day = space_not_day.lower()
-
 if lower_day == "monday" or lower_day== "tuesday" or lower_day== "wednesday" or lower_day== "thursday" or lower_day== "friday":
     print("Weekday")
 elif lower_day == "saturday":

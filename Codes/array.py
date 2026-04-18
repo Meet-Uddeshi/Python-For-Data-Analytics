@@ -165,13 +165,13 @@ aditi= ["Alpha", "Bravo", "Charlie", "Delta", "Echo",
 #
 # a="aditi"
 # print(a.rstrip("ait")
-
-days= input("enter the day: ")
-space_not_day= days.strip()
-lower_case= space_not_day.lower()
-if lower_case == ("monday") or lower_case == ("tuesday") or lower_case == ("wednesday") or lower_case == ("thursday") or lower_case == ("friday"):
-    print("it's weekday")
-elif lower_case == ("saturday"):
-    print("it's weekend")
-else:
- print("it's holiday")
+#
+# days= input("enter the day: ")
+# space_not_day= days.strip()
+# lower_case= space_not_day.lower()
+# if lower_case == ("monday") or lower_case == ("tuesday") or lower_case == ("wednesday") or lower_case == ("thursday") or lower_case == ("friday"):
+#     print("it's weekday")
+# elif lower_case == ("saturday"):
+#     print("it's weekend")
+# else:
+#  print("it's holiday")

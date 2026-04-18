@@ -47,7 +47,7 @@ m.remove(3)
 m.sort()
 print(m)
 
-# In array for loop has in key word which is used to compare array values directly not any index.
+# In array for loop has in key word which is used to compare array values directly not index.
 for i in m:
     print(i)
 

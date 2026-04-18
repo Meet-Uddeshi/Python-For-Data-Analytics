@@ -47,6 +47,10 @@ m.remove(3)
 m.sort()
 print(m)
 
+# In array for loop has in key word which is used to compare array values directly not any index.
+for i in m:
+    print(i)
+
 # Nested loop: Loop inside loop. It is generally used for more than 1d array or 1d matrix.
 
 # Array element multiplication.

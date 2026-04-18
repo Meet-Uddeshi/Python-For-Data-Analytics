@@ -35,3 +35,13 @@ i = 100
 while i>=0:
     print(i)
     i = i - 1
+
+# 2) for loop:
+# There are some keywords are used for this loop like in, range etc.
+for i in range(10):
+    print(i)
+
+for i in range(10, -1, -1):  # range is the function which takes arguments iteration of loop, till number-1, gap/difference as input
+    print(i)
+
+# Nested loops are covered in array program.

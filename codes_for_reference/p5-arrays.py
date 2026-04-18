@@ -131,10 +131,10 @@ fruits = ["apple", "banana", "cherry", "date", "elderberry",
     "fig", "grape", "honeydew", "kiwi", "lemon","mango","mango",
     "mango", "nectarine", "orange", "papaya", "quince"]
 
-# fruits.insert(10, "orange")
+fruits.insert(10, "orange")
 # print(fruits)
 
-# fruits. remove("orange")
+fruits. remove("orange")
 # print(fruits)
 #
 # fruits.pop(10)

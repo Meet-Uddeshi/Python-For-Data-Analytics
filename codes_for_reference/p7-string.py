@@ -36,3 +36,4 @@ elif lower_day == "sunday":
 else:
     print("Enter valid day")
 
+

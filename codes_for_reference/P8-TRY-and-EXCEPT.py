@@ -33,6 +33,8 @@
 # UnicodeTranslateError	Raised when a unicode translation problem occurs
 # ValueError	Raised when there is a wrong value in a specified data type
 # ZeroDivisionError	Raised when the second operator in a division is zero
+# finally	Used with exceptions, a block of code that will be executed no matter if there is an exception or not
+
 #
 # #
 # # different type of TRY and except are used in different scenarios:
@@ -101,3 +103,12 @@
 #
 # else:
 #     print("Result is:", result)
+
+a = 5
+b = 5
+try:
+    c = a/b
+except ZeroDivisionError:
+    print("Division by zero")
+finally:
+    print("Finally, block executed even there is error or not")

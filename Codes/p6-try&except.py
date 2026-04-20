@@ -57,3 +57,13 @@ else:
 # UnicodeTranslateError-	Raised when a unicode translation problem occurs
 # ValueError-	Raised when there is a wrong value in a specified data type
 # ZeroDivisionError-	Raised when the second operator in a division is zero
+
+#finally-	Used with exceptions, a block of code that will be executed no matter if there is an exception or not
+a=1
+b=0
+try:
+    c = a / b
+    print(c)
+finally:
+    print("Infinity")
+print("Hello World")

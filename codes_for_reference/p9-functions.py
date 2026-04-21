@@ -119,10 +119,30 @@
 # Returning Different Data Types.
 # Functions can return any data type, including lists, tuples, dictionaries, and more.
 
-def my_function():
-  return ["apple", "banana", "cherry"]
+# def my_function():
+#   return ["apple", "banana", "cherry"]
+#
+# fruits = my_function()
+# print(fruits[0])
+# print(fruits[1])
+# print(fruits[2])
 
-fruits = my_function()
-print(fruits[0])
-print(fruits[1])
-print(fruits[2])
+# Positional-Only Arguments
+# You can specify that a function can have ONLY positional arguments.
+# To specify positional-only arguments, add , / after the arguments:
+
+# def my_function(name, /):
+#   print("Hello", name)
+#
+# my_function("Emil")
+
+# Keyword-Only Arguments
+# To specify that a function can have only keyword arguments, add *, before the arguments:
+
+def my_function(*, name):
+  print("Hello", name)
+
+my_function(name = "Emil")
+
+
+# Combining Positional-Only and Keyword-Only

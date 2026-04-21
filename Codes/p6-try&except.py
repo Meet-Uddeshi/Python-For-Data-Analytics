@@ -68,11 +68,3 @@ else:
 #     print("Infinity")
 # print("Hello World")
 
-#function
-# funcations can be called in entire project
-#use - code reusability, logical error can be identified easily, def keyword, functions can be parameterised / non parameterised
-# return value - intiger, non return value- void
-#return- dynamic, static,
-#. operator- function call
-#-> operator- return value of function would be in which data type
-# piece vise code

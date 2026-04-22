@@ -124,3 +124,63 @@
 #
 # print("Reversed number:", rev)
 
+
+
+# def check_day():
+#     day = input("Enter a day: ").lower().strip()
+#
+#     if day in ["monday", "tuesday", "wednesday", "thursday", "friday"]:
+#         print("Weekday")
+#     elif day == "saturday":
+#         print("Weekend")
+#     elif day == "sunday":
+#         print("Holiday")
+#     else:
+#         print("Invalid input")
+#
+# # Call the function
+# check_day()
+#
+# # Taking input from user
+#
+#
+# x = 10
+# y = 5.5
+# z = "Python"
+# a = True
+#
+# print('''datatype for x=''', type(x),"\n",
+#      '''datatype for a=''',type(a),"\n",
+#     '''datatype for z=''',type(z))
+#
+# a = 1
+# b = 2
+# c = 3
+#
+# a,b,c= b,c,a
+# print (a,b,c)
+
+# x = "10"
+# y = "20"
+#
+# z= int(x)
+# p= int(y)
+#
+# a=(z+p)
+#
+# print(a)
+
+# x = 10
+# x = x + 5
+# x = "Now value is " + str(x)
+# print(x)
+
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+a, b = b, a
+
+print("After swap:")
+print("a =", a)
+print("b =", b)

@@ -126,21 +126,23 @@
 
 
 
-# def check_day():
-#     day = input("Enter a day: ").lower().strip()
-#
-#     if day in ["monday", "tuesday", "wednesday", "thursday", "friday"]:
-#         print("Weekday")
-#     elif day == "saturday":
-#         print("Weekend")
-#     elif day == "sunday":
-#         print("Holiday")
-#     else:
-#         print("Invalid input")
-#
-# # Call the function
-# check_day()
-#
+def check_day(days):
+
+    if days in ["monday", "tuesday", "wednesday", "thursday", "friday"]:
+        return("Weekday")
+    elif days == "saturday":
+        return("Weekend")
+    elif days == "sunday":
+        return("Holiday")
+    else:
+        return("Invalid input")
+
+a = (input("Input your day: "))
+b = a.lower().strip()
+
+d = check_day(b)
+print(d)
+
 # # Taking input from user
 #
 #
@@ -176,11 +178,28 @@
 # print(x)
 
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+#
+# a, b = b, a
+#
+# print("After swap:")
+# print("a =", a)
+# print("b =", b)
 
-a, b = b, a
+# number= int(input("input your number: "))
+# if number%2==0:
+#     print ("its an even number")
+# else:
+#     print("Its an odd number")
 
-print("After swap:")
-print("a =", a)
-print("b =", b)
+# balance_amount = 100000
+# amount = int(input("Enter the amount for withdrawal: "))
+# if amount > balance_amount:
+#     print("Insufficient balance")
+# else:
+#     remaining_balance = balance_amount - amount
+#     print("withdrawal sucessful")
+#     print("Remaining balance: ", remaining_balance)
+#
+

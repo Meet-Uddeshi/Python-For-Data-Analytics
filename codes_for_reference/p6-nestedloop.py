@@ -189,5 +189,58 @@ x = frozenset({"apple", "banana", "cherry"})
 print(x)
 print(type(x))
 
+# for matrix multiplication first we need to check the number of cols should match with number of rows with second matrix.
+# if it matches then only the operation is possible else not possible.
+# in matrix calculation a*b != b*a as it wont fulfill the match of  coloumns of first mtrix with second mtrix.
+# how to calculate in matrix:
+a= [a,b,c]
+    d e f]
+    g h i]
+b = [p q r
+     s t u
+     v w x]
+a*b = [ap+bs+cv aq+bt+cw ar+bu+cx
+       dp+cs+fv dq+et+fw dr+eu+fx
+       gp+hs+iv gq+ht+iw gr+hu+ix]
 
+# Array element multiplication.
+#  in the below loop will run 6 times and will break starts from k variable then j and then i
+# 1) for loop
+a = [[4,6],
+     [8,3]]
+b = [[9,7],
+     [5,2]]
+c = [[0, 0],
+     [0, 0]]
 
+for i in range(len(a)):
+    for j in range(len(b[0])):
+        for k in range(len(b)):
+            c[i][j] += a[i][k] * b[k][j]
+
+for row in c:
+    print(row)
+
+# 2) while loop
+
+# in the below syntax only changes is while loop and iteraton value rest reains same.
+a = [[4,6],
+     [8,3]]
+b = [[9,7],
+     [5,2]]
+c = [[0, 0],
+     [0, 0]]
+
+i = 0
+while i < len(a):
+    j = 0
+    while j < len(b[0]):
+        k = 0
+        while k < len(b):
+            c[i][j] += a[i][k] * b[k][j]
+            k += 1
+        j += 1
+    i += 1
+
+for row in c:
+    print(row)

@@ -149,19 +149,6 @@ fruits. remove("orange")
 # veg=fruits.copy()
 # print(veg)
 
-# for matrix multiplication first we need to check the number of cols should match with number of rows with second matrix.
-# if it matches then only the operation is possible else not possible.
-# in matrix calculation a*b != b*a as it wont fulfill the match of  coloumns of first mtrix with second mtrix.
-# how to calculate in matrix:
-a= [a,b,c]
-    d e f]
-    g h i]
-b = [p q r
-     s t u
-     v w x]
-a*b = [ap+bs+cv aq+bt+cw ar+bu+cx
-       dp+cs+fv dq+et+fw dr+eu+fx
-       gp+hs+iv gq+ht+iw gr+hu+ix]
 
 
 

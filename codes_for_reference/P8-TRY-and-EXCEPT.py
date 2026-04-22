@@ -34,7 +34,7 @@
 # ValueError	Raised when there is a wrong value in a specified data type
 # ZeroDivisionError	Raised when the second operator in a division is zero
 # finally	Used with exceptions, a block of code that will be executed no matter if there is an exception or not
-
+# raise keyword - it only throws error but will run the code. it can be used in TRY and EXCEPT function.
 #
 # #
 # # different type of TRY and except are used in different scenarios:

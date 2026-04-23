@@ -159,3 +159,78 @@
 #
 # #update multiple values
 # student.update({"age": 23, "marks": 95})
+#
+# Nested loop: Loop inside loop. It is generally used for more than 1d array or 1d matrix.
+# Array element multiplication.
+# 1) for lop
+a = [[4,6],
+     [8,3]]
+b = [[9,7],
+     [5,2]]
+c = [[0, 0],     # a != b
+     [0, 0]]     #first number of columns & second number of rows must be same in number
+
+for i in range(len(a)):
+    for j in range(len(b[0])):
+        for k in range(len(b)):
+            c[i][j] += a[i][k] * b[k][j]
+
+for row in c:
+    print(row)
+
+# 2) while loop
+a = [[4,6],
+     [8,3]]
+b = [[9,7],
+     [5,2]]
+c = [[0, 0],
+     [0, 0]]
+
+i = 0
+while i < len(a):
+    j = 0
+    while j < len(b[0]):
+        k = 0
+        while k < len(b):
+            c[i][j] += a[i][k] * b[k][j]
+            k += 1
+        j += 1
+    i += 1
+
+for row in c:
+    print(row)
+
+# Array element addition
+# 1) for loop
+a = [[4,6],
+     [8,3]]
+b = [[9,7],
+     [5,2]]
+c = [[0, 0],
+     [0, 0]]
+
+for i in range(len(a)):
+    for j in range(len(b[0])):
+        c[i][j] = a[i][j] + b[i][j]
+
+for row in c:
+    print(row)
+
+# 2) while loop
+a = [[4,6],
+     [8,3]]
+b = [[9,7],
+     [5,2]]
+c = [[0, 0],
+     [0, 0]]
+
+i = 0
+while i < len(a):
+    j = 0
+    while j < len(a[0]):
+        c[i][j] = a[i][j] + b[i][j]
+        j += 1
+    i += 1
+
+for row in c:
+    print(row)

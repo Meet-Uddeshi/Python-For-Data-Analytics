@@ -9,4 +9,5 @@
 add =  lambda a,b: a + b
 mul = lambda a,b: a * b
 
-print()
+print(add(10,20))
+print(mul(10,20))

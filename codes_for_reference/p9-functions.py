@@ -138,11 +138,36 @@
 
 # Keyword-Only Arguments
 # To specify that a function can have only keyword arguments, add *, before the arguments:
-
-def my_function(*, name):
-  print("Hello", name)
-
-my_function(name = "Emil")
-
+#
+# def my_function(*, name):
+#   print("Hello", name)
+#
+# my_function(name = "Emil")
+#
 
 # Combining Positional-Only and Keyword-Only
+
+a= float(input("Enter a number: "))
+b= float(input("Enter another number: "))
+operator = input("Enter a calculation operator: ")
+operator = operator.strip()
+def calculator(a,b,operator):
+  if operator=="+":
+    return a+b
+  elif operator=="-":
+    return a-b
+  elif operator=="*":
+    return a*b
+  elif operator=="/":
+    return a/b
+  elif operator=="^":
+    return a**b
+  elif operator=="%":
+    return a%b
+  else:
+    return "Invalid operator"
+result = calculator(a,b,operator)
+print("your first number entered is",a , "your second number entered is", b,
+  "your amount after calculation is",result)
+
+

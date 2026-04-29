@@ -147,27 +147,70 @@
 
 # Combining Positional-Only and Keyword-Only
 
-a= float(input("Enter a number: "))
-b= float(input("Enter another number: "))
-operator = input("Enter a calculation operator: ")
-operator = operator.strip()
-def calculator(a,b,operator):
-  if operator=="+":
-    return a+b
-  elif operator=="-":
-    return a-b
-  elif operator=="*":
-    return a*b
-  elif operator=="/":
-    return a/b
-  elif operator=="^":
-    return a**b
-  elif operator=="%":
-    return a%b
-  else:
-    return "Invalid operator"
-result = calculator(a,b,operator)
-print("your first number entered is",a , "your second number entered is", b,
-  "your amount after calculation is",result)
+# a= float(input("Enter a number: "))
+# b= float(input("Enter another number: "))
+# operator = input("Enter a calculation operator: ")
+# operator = operator.strip()
+# def calculator(a,b,operator):
+#   if operator=="+":
+#     return a+b
+#   elif operator=="-":
+#     return a-b
+#   elif operator=="*":
+#     return a*b
+#   elif operator=="/":
+#     return a/b
+#   elif operator=="^":
+#     return a**b
+#   elif operator=="%":
+#     return a%b
+#   else:
+#     return "Invalid operator"
+# result = calculator(a,b,operator)
+# print("your first number entered is",a , "your second number entered is", b,
+#   "your amount after calculation is",result)
+#
+# import math
+#
+# def calculate_area():
+#     print("\nSelect the figure:")
+#     print("1. Circle")
+#     print("2. Square")
+#     print("3. Rectangle")
+#     print("4. Triangle")
+#     print("5. Exit")
+#
+#     choice = int(input("Enter your choice (1-5): "))
+#
+#     if choice == 1:
+#         radius = float(input("Enter radius: "))
+#         area = math.pi * radius ** 2
+#         print(f"Area of Circle = {round(area, 2)}")
+#
+#     elif choice == 2:
+#         side = float(input("Enter side: "))
+#         area = side ** 2
+#         print(f"Area of Square = {area}")
+#
+#     elif choice == 3:
+#         length = float(input("Enter length: "))
+#         breadth = float(input("Enter breadth: "))
+#         area = length * breadth
+#         print(f"Area of Rectangle = {area}")
+#
+#     elif choice == 4:
+#         base = float(input("Enter base: "))
+#         height = float(input("Enter height: "))
+#         area = 0.5 * base * height
+#         print(f"Area of Triangle = {area}")
+#
+#     elif choice == 5:
+#         print("Exiting program. Thank you!")
+#
+#     else:
+#         print("Invalid choice! Please select between 1-5.")
+#
+# calculate_area()
+
 
 

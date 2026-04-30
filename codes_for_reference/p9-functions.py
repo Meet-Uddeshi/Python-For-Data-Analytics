@@ -169,9 +169,9 @@
 # result = calculator(a,b,operator)
 # print("your first number entered is",a , "your second number entered is", b,
 #   "your amount after calculation is",result)
-#
+# #
 # import math
-#
+# #
 # def calculate_area():
 #     print("\nSelect the figure:")
 #     print("1. Circle")
@@ -214,3 +214,35 @@
 
 
 
+def area(shape):
+    try:
+        if shape == "square":
+            side_length = float(input("Enter side length: "))
+            return side_length * side_length
+        elif shape == "rectangle":
+            length_of_rectangle = float(input("Enter length: "))
+            breadth_of_rectangle = float(input("Enter breadth: "))
+            return length_of_rectangle * breadth_of_rectangle
+        elif shape == "circle":
+            radius = float(input("Enter radius: "))
+            return (22/7)*radius**2
+        elif shape == "triangle":
+            print("select the type of triangle:1.equilateral triangle \n2.right angled triangle")
+            choice = int(input("Enter your choice (1-2): "))
+            if choice == 1:
+                side_length = float(input("Enter side length: "))
+                return (3**0.5/4)*side_length**2
+            elif choice == 2:
+                base = float(input("Enter base of triangle: "))
+                height = float(input("Enter height of triangle: "))
+                return 0.5 * base * height
+            else:
+                print("Invalid choice! Please select between 1-2.")
+        else:
+            print("invalid shape")
+    except:
+        print("Invalid input! Please enter numbers correctly.")
+
+shape = input("Enter shape (square/rectangle/circle/triangle): ").lower().strip()
+result = area(shape)
+print(result)

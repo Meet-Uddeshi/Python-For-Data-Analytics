@@ -248,3 +248,19 @@ def main():
 
 main()
 
+meet = get_shape()
+shape = get_function(meet)
+cal = calculate(shape, meet)
+print(cal)
+
+#operation vise functions- space
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Example usage
+num = int(input("Enter a number: "))
+print("Factorial is:", factorial(num))

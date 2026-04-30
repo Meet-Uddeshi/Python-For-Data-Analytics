@@ -246,3 +246,6 @@ def area(shape):
 shape = input("Enter shape (square/rectangle/circle/triangle): ").lower().strip()
 result = area(shape)
 print(result)
+
+# function sould be made isolated for different operations.
+# main() is the main function where if used you can call out all the functions from the main file.

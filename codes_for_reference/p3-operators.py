@@ -7,6 +7,7 @@
 # !=  Not equals
 # ===  will compare value, data and datatype but it's generally not used now.
 # // = will return the whole number after the division
+# if you want the input not be updated as in negative then use < sign
 
 
 #

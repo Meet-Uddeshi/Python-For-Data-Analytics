@@ -264,3 +264,18 @@ def factorial(n):
 # Example usage
 num = int(input("Enter a number: "))
 print("Factorial is:", factorial(num))
+
+
+def fib(n):
+    try:
+        if n == 0:
+            return 0
+        elif n == 1:
+            return 1
+        else:
+            return fib(n-1) + fib(n-2)
+    except Exception as e:
+        print("Error:", e)
+
+num = int(input("Enter a number: "))
+print("Fibonacci:", fib(num))

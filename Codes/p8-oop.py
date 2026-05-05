@@ -9,9 +9,47 @@
 #A Class is like an object constructor, or a "blueprint" for creating objects.
 
 #objects can be changed based on its properties but class can not be changed.
-class aditi:
-    fruits= ("apple", "banana", "orange")
+# class aditi:
+#     fruits= ("apple", "banana", "orange")
+#
+# a1=aditi()
+# print(a1.fruits)
 
-a1=aditi()
-print(a1.fruits)
+
+#abstraction is used for data hiding, means showing only the essential features
+#abc- abstraction base class is used for python oop and its necessary to import it
+
+from abc import ABC, abstractmethod
+
+class Greet(ABC):
+    @abstractmethod
+    def say_hello(self):
+        pass  # Abstract method
+
+class English(Greet):
+    def say_hello(self):
+        return "Hello!"
+
+g = English()
+print(g.say_hello())
+
+#These properties are declared with @property decorator and marked as abstract using @abstractmethod.
+#Subclasses must implement these properties.
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @property
+    @abstractmethod
+    def species(self):
+        pass  # Abstract property, must be implemented by subclasses
+
+class Dog(Animal):
+    @property
+    def species(self):
+        return "Canine"
+
+# Instantiate the concrete subclass
+dog = Dog()
+print(dog.species)
 

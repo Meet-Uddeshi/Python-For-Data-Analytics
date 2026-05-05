@@ -29,10 +29,31 @@
 
 # create class:
 
+# abstarction is used for data hiding and to show only essential data or operations.
+
 # class cars:
 #     x = ("Volvo", "Audi", "Toyota")
 #
 # y =cars()
 # print(y.x)
+
+#
+# ABC is base clase - Abstarction Base Class used for OOP
+# only class i=needs to defiend no value needs to be taken
+
+from abc import ABC, abstractmethod
+
+class Greet(ABC):
+    @abstractmethod
+    def say_hello(self):
+        pass
+
+class English(Greet):
+    def say_hello(self):
+        return "Hello!"
+
+g = English()
+print(g.say_hello())
+
 
 

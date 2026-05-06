@@ -42,6 +42,8 @@
 # only class i=needs to defiend no value needs to be taken
 
 from abc import ABC, abstractmethod
+from multiprocessing.pool import worker
+
 
 class Greet(ABC):
     @abstractmethod
@@ -57,3 +59,28 @@ print(g.say_hello())
 
 
 
+# inheritance
+# inheritance means it uses the parent class details.
+# Inheritance allows us to define a class that inherits all the methods and properties from another class.
+#
+# Parent class is the class being inherited from, also called base class.
+#
+# Child class is the class that inherits from another class, also called derived class.
+# types of inheritance:
+# 1. single level: it only has 1 parent and 1 child classmethod
+# 2. Multilevel: it has 1 parent class 1 child class and 1 sub child class in it.
+# 3. MUltiple : it has 1 parent class and more than 2 child class in it.
+
+# java and c++ doesnot support multiple inheritance it requires interface to worker(
+# code reusability
+# less complex
+# less length of code
+# CHILD CLASS CAN ONLY HAVE ONE PARENT CLASS WHEREAS PARENT CLASS CAN HAVE MULTIPE CHILD CLASS.
+
+# Super(). - keyword used to inherit the parent class properties(parameters,methods/ function , variables, sub-class)
+# init - is the constructor which used for distinct dat iteration(line by line)
+
+# Encapsulation: data protection
+# Polymorphism - method overloading and overriding, constructor
+
+class

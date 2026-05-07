@@ -41,22 +41,22 @@
 # ABC is base clase - Abstarction Base Class used for OOP
 # only class i=needs to defiend no value needs to be taken
 
-from abc import ABC, abstractmethod
-from multiprocessing.pool import worker
-
-
-class Greet(ABC):
-    @abstractmethod
-    def say_hello(self):
-        pass
-
-class English(Greet):
-    def say_hello(self):
-        return "Hello!"
-
-g = English()
-print(g.say_hello())
-
+# from abc import ABC, abstractmethod
+# from multiprocessing.pool import worker
+#
+#
+# class Greet(ABC):
+#     @abstractmethod
+#     def say_hello(self):
+#         pass
+#
+# class English(Greet):
+#     def say_hello(self):
+#         return "Hello!"
+#
+# g = English()
+# print(g.say_hello())
+#
 
 
 # inheritance
@@ -83,4 +83,100 @@ print(g.say_hello())
 # Encapsulation: data protection
 # Polymorphism - method overloading and overriding, constructor
 
-class
+# in the below example code if we have single child class then it will be defined as simple/single layer.
+# if we have two or more child class then it wil be multiple inheritance
+# if we have one child class and one or more  sub class in it then it will be under multilevel.
+# class Parent:
+#     def greet(self):
+#         print("Hello from Parent")
+#
+# class Child(Parent):
+#     pass
+# class Child2(Parent):
+#     pass
+# class SubChild(Child,Child2):
+#     pass
+#
+# c = Child()
+# c.greet()  # Output: Hello from Parent
+
+# Encapsulation:
+# Encapsulation is about protecting data inside a class. type of encapsultion are as follows:
+# 1.Private Properties - Get Set method is used.It is defined or update as double undercore.
+# Get - value to be printed
+# Set - used to update
+# 2.Protected Variable - it is only for the particular file only.It is defined or updated as single underscore
+#3. public can be used in whole project
+#4. default - also in whole project
+# Why Use Encapsulation?
+# Encapsulation provides several benefits:
+#
+# Data Protection: Prevents accidental modification of data
+# Validation: You can validate data before setting it
+# Flexibility: Internal implementation can change without affecting external code
+# Control: You have full control over how data is accessed and modified
+
+# Get Method:
+#
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.__age = age
+#
+#   def get_age(self):
+#     return self.__age
+#
+# p1 = Person("Tobias", 25)
+# print(p1.get_age())
+
+# Set Method:
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.__age = age
+#
+#   def get_age(self):
+#     return self.__age
+#
+#   def set_age(self, age):
+#     if age > 0:
+#       self.__age = age
+#     else:
+#       print("Age must be positive")
+#
+# p1 = Person("Tobias", 25)
+# print(p1.get_age())
+#
+# p1.set_age(26)
+# print(p1.get_age())
+
+# Protected method:
+
+# class Person:
+#   def __init__(self, name, salary):
+#     self.name = name
+#     self._salary = salary # Protected property
+#
+# p1 = Person("Linus", 50000)
+# print(p1.name)
+# print(p1._salary) # Can access, but shouldn't
+
+class Calculator:
+  def __init__(self):
+    self.result = 0
+
+  def __validate(self, num):
+    if not isinstance(num, (int, float)):
+      return False
+    return True
+
+  def add(self, num):
+    if self.__validate(num):
+      self.result += num
+    else:
+      print("Invalid number")
+
+calc = Calculator()
+calc.add(10)
+calc.add(5)
+print(calc.result)

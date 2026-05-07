@@ -55,6 +55,52 @@
 
 # Encapsulation
 # Putting data and functions inside one class
+#public, private, protected, default
+# Public- name- Anywhere- whole project
+# Protected- _name- Inside class & child class- file
+# Private- __name- Only inside class- class
+# Getter and Setter Methods in Python
+# Access private data safely
+# Modify private data safely
+# class Employee:
+#
+#     def __init__(self):
+#         self.__salary = 50000
+#
+#     # Getter
+#     def get_salary(self):
+#         return self.__salary
+#
+#     # Setter
+#     def set_salary(self, salary):
+#
+#         if salary > 0:
+#             self.__salary = salary
+#         else:
+#             print("Invalid Salary!")
+#
+# e1 = Employee()
+# print(e1.get_salary())
+# e1.set_salary(70000)
+# print(e1.get_salary())
+# Default- normal variable- Same as public in Python- whole project
+
+# class Employee:
+#
+#     def __init__(self):
+#         self.name = "Aditi"          # public
+#         self._department = "IT"      # protected
+#         self.__salary = 50000        # private
+#
+#     def show_private(self):
+#         return self.__salary
+#
+# e1 = Employee()
+#
+# print(e1.name)
+# print(e1._department)
+# print(e1.show_private())
+
 # class Student:
 #     def __init__(self, name, marks):
 #         self.name = name
@@ -79,6 +125,8 @@
 
 #Inheritance
 # One class can use another class’s features
+#one child class can not have multiple parent class becuase
+# :one object can follow one parents class properties at a time
 # class Animal:
 #     def speak(self):
 #         return "Animal speaks"

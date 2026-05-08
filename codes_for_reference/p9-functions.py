@@ -9,7 +9,7 @@
 # piece wise code as in one after teh other functions is run
 #Arguments before / are positional-only, and arguments after * are keyword-only
 # # calling a function:
-# def my_function():
+# def my_function():s
 #   print("Hello in the new world")
 # my_function()
 

@@ -12,8 +12,7 @@
 # Polymorphism
 # Encapsulation
 # Abstrction
-
-
+import time
 
 # Classes and objects are the two core concepts in object-oriented programming.
 #
@@ -160,23 +159,90 @@
 # p1 = Person("Linus", 50000)
 # print(p1.name)
 # print(p1._salary) # Can access, but shouldn't
+#
+# class Calculator:
+#   def __init__(self):
+#     self.result = 0
+#
+#   def __validate(self, num):
+#     if not isinstance(num, (int, float)):
+#       return False
+#     return True
+#
+#   def add(self, num):
+#     if self.__validate(num):
+#       self.result += num
+#     else:
+#       print("Invalid number")
+#
+# calc = Calculator()
+# calc.add(10)
+# calc.add(5)
+# print(calc.result)
 
-class Calculator:
-  def __init__(self):
-    self.result = 0
+# The word "polymorphism" means "many forms", and in programming it refers to methods/functions/operators with the same name that can be executed on many objects
+# or classes.
+#
+# Compile time method overloading - not supported in python
+# run time method overriding  - in run time method overriding function remains same however, the output chnages.
+# The self parameter is a reference to the current instance of the class.
+#   self keword is used to define particular paramtere in the code.
+# everytime ehrnever we take input from user or write a code for OOP we always need to define the objet.
+# in the below example student1 and student2 are the objects.
+# *args - means if it is agruement of methods and function the there can be multiple arguements in teh list .
+# *kargs - means if its dictionary format or json format.
+# class student:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+#
+# student1_name = input("Enter the name: ")
+# student1_age = int(input("Enter the age: "))
+# student2_name = input("Enter the name: ")
+# student2_age = int(input("Enter the age: "))
+#
+# student1 = student(student1_name,student1_age)
+# student2 = student(student2_name,student2_age)
+#
+# print(student1.name,student1.age)
+# print(student2.name,student2.age)
+#
+# # compile time polymor
+#
+# class calc:
+#   def add(self,num1 = 1,num2 = 2, *args):
+#     result = num1 + num2
+#     for num in args:
+#       result += num
+#     return result
+#
+# meet = calc()
+# print(meet.add(3,4,5,6,7,8,9))
 
-  def __validate(self, num):
-    if not isinstance(num, (int, float)):
-      return False
-    return True
 
-  def add(self, num):
-    if self.__validate(num):
-      self.result += num
-    else:
-      print("Invalid number")
+# method and function is one and the same.
 
-calc = Calculator()
-calc.add(10)
-calc.add(5)
-print(calc.result)
+# run time polymer:
+# In the below example : we have amd a class Animal and method /funtion  which returns some value.not
+# going ahead we mad e a nother class of DOg and cat where we have inheritted the animal calss and then we have called the sound function or method.
+# So if we create a object of  dog or cat anywhere in project it will give us the value defined in the code exampe "bark" in case of Dog and "meow" in case of cat.
+# after that we made a variable animal wherein we stored the values and printed the same.
+class Animal:
+  def sound(self):
+    return "Some generic sound"
+
+
+class Dog(Animal):
+  def sound(self):
+    return "Bark"
+
+
+class Cat(Animal):
+  def sound(self):
+    return "Meow"
+
+
+# Polymorphic behavior
+animals = [Dog(), Cat(), Animal()]
+for animal in animals:
+  print(animal.sound())

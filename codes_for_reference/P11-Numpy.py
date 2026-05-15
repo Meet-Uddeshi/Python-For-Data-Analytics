@@ -14,7 +14,7 @@
 
 
 import numpy as np
-# import statistics as stat
+import statistics as stat
 # age =np.array([10,15,20,24,30,30])
 # n = np.mean(age)
 # print (n)
@@ -40,24 +40,42 @@ import numpy as np
 # Multiplication (Matrix)A @ B or np.matmul(A, B)Standard dot product matrix multiplication.Multiplication (Element-wise)A * B or np.multiply(A, B)Multiplies corresponding elements (Hadamard product).
 # TransposeA.T or A.transpose()Flips the matrix over its diagonal.
 # Inversenp.linalg.inv(A)Computes the multiplicative inverse of a square matrix.
-# differencebetween array and list is that it varies as the memory used will be different.
-a = [[1,2,4],
-      [5,6,7],
-      [8,9,10]]
-b = [[2,4,6],
-     [3,6,9],
-     [5,10,15]]
-z = np.array(a)
-q= np.array(b)
-mult = np.dot(z,q)
-addition = np.add(z,q)
-sub = np.subtract(z,q)
-t = np.transpose(z)
-u = np.transpose(q)
-inv = np.linalg.inv(z)
-print(mult)
-print(addition)
-print(sub)
-print(t,"\n",u)
-print(z)
-print(inv)
+# # differencebetween array and list is that it varies as the memory used will be different.
+# a = [[1,2,4],
+#       [5,6,7],
+#       [8,9,10]]
+# b = [[2,4,6],
+#      [3,6,9],
+#      [5,10,15]]
+# z = np.array(a)
+# q= np.array(b)
+# mult = np.dot(z,q)
+# addition = np.add(z,q)
+# sub = np.subtract(z,q)
+# t = np.transpose(z)
+# u = np.transpose(q)
+# inv = np.linalg.inv(z)
+# print(mult)
+# print(addition)
+# print(sub)
+# print(t,"\n",u)
+# print(z)
+# print(inv)
+
+# Quartile - is the data whoch is divided in 25% intervals.
+# Decile - is the data whoch is divided in 10% intervals.
+# Percentile - is the data whoch is divided in 1% intervals.
+# Percentile Formula: p100 = 100/100(n+1)
+# Decile Fromula: p10 = 10/100(n+1)
+# Quartile Formula: p25 = 25/100(n+1)
+
+# uses in real life:
+# Quartiles: Used in box-and-whisker plots to show the spread, median, and skewness of data.
+# Deciles: Used in finance and economic studies to analyze income distribution or performance brackets.
+# Percentiles: Used in standardized testing (e.g., scoring at the 90th percentile) to compare scores relative to the whole group.
+
+abc = [13, 21, 21, 40, 42, 48, 55, 72]
+x = np.array(abc)
+print(np.percentile(x, 25))
+
+

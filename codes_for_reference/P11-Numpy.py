@@ -77,5 +77,7 @@ import statistics as stat
 abc = [13, 21, 21, 40, 42, 48, 55, 72]
 x = np.array(abc)
 print(np.percentile(x, 25))
+print(np.decile(x, 10))
+print(np.quantile(x, 0.25))
 
 

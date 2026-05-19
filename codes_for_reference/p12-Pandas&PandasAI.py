@@ -60,3 +60,10 @@ data = pd.read_csv("C:/Users/Admin/Documents/Python-For-Data-Analytics/data/swig
 # print(data.drop_duplicates())
 
 # print(data.drop()) - put values in () to drop values. example data.drop(0)
+# # 
+# pipeline for data vu=isulaisation:
+# 1. data collection
+# 2. data cleaning - missing, null ,noise, dupes
+# 3. data transformation - change data format or structure
+# 4. data visualization - charts, graphs
+# 5. data analysis - patterns, inference, insights

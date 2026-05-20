@@ -4,7 +4,7 @@
 print("Enter non zero numbers.")
 num_1 = int(input("Enter first number: "))
 num_2 = int(input("Enter second number: "))
-
+ 
 add = num_1 + num_2
 sub = num_1 - num_2
 mul = num_1 * num_2

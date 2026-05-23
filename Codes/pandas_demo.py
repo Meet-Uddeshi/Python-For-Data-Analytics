@@ -9,7 +9,7 @@
 #2. DataFrame (2-D)
 
 #Series – like a column in Excel
-#DataFrame – like a whole Excel sheet
+#DataFrame – like a whole Excel sheet, to modify data in columns and rows
 
 import pandas as pd
 data = pd.read_csv("C:/Python-For-Data-Analytics/data/Amazon_Big_Sales_Dataset_2026.csv")

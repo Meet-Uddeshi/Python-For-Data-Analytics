@@ -53,12 +53,17 @@ plt.show()
 
 # Histogram chart
 marks = [55, 60, 65, 70, 75, 80, 85, 90, 95]
-
 plt.figure(figsize=(6, 4))
 plt.hist(marks)
 plt.title("Histogram")
 plt.xlabel("Marks")
 plt.ylabel("Frequency")
+plt.show()
+
+# Pie chart
+plt.figure(figsize=(6, 4))
+plt.pie(df["Marks"], labels=df["Student"])
+plt.title("Pie Chart")
 plt.show()
 
 # Searborn:

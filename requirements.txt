@@ -1,3 +1,5 @@
 numpy
 statistics
 pandas
+matplotlib
+seaborn

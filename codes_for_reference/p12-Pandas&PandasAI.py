@@ -61,7 +61,7 @@ data = pd.read_csv("C:/Users/Admin/Documents/Python-For-Data-Analytics/data/swig
 
 # print(data.drop()) - put values in () to drop values. example data.drop(0)
 # # 
-# pipeline for data vu=isulaisation:
+# pipeline for data visulisation:
 # 1. data collection
 # 2. data cleaning - missing, null ,noise, dupes
 # 3. data transformation - change data format or structure

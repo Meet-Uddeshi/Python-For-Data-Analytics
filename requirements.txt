@@ -4,3 +4,4 @@ matplotlib
 pandasai
 seaborn
 statistics
+scikit-learn

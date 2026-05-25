@@ -14,7 +14,6 @@ from sklearn.preprocessing import LabelEncoder
 # Suppress warnings for cleaner console output
 warnings.filterwarnings("ignore")
 
-
 class DataPreprocessor:
     """
     A class that automates standard data cleaning and preprocessing workflows

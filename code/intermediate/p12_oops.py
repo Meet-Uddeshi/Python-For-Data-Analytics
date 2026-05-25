@@ -59,7 +59,6 @@ class Animal:
     def sound(self):
         print("Animal makes sound")
 
-
 class Dog(Animal):
     def bark(self):
         print("Dog barks")
@@ -75,16 +74,13 @@ class Grandfather:
     def house(self):
         print("Grandfather's House")
 
-
 class Father(Grandfather):
     def car(self):
         print("Father's Car")
 
-
 class Son(Father):
     def bike(self):
         print("Son's Bike")
-
 
 s = Son()
 
@@ -97,16 +93,13 @@ class Father:
     def skills1(self):
         print("Programming")
 
-
 class Mother:
     def skills2(self):
         print("Cooking")
 
-
 class Child(Father, Mother):
     def skills3(self):
         print("Gaming")
-
 
 c = Child()
 
@@ -119,14 +112,11 @@ class Parent:
     def property(self):
         print("Parent Property")
 
-
 class Child1(Parent):
     pass
 
-
 class Child2(Parent):
     pass
-
 
 c1 = Child1()
 c2 = Child2()
@@ -139,21 +129,17 @@ class A:
     def method_a(self):
         print("Class A")
 
-
 class B(A):
     def method_b(self):
         print("Class B")
-
 
 class C(A):
     def method_c(self):
         print("Class C")
 
-
 class D(B, C):
     def method_d(self):
         print("Class D")
-
 
 obj = D()
 
@@ -203,7 +189,6 @@ class BankAccount:
     def show_balance(self):
         print(f"Balance: {self.__balance}")
 
-
 acc = BankAccount("Meet", 5000)
 
 # Accessing public variable
@@ -239,7 +224,6 @@ class Calculator:
     def add(self, a, b, c=0):
         print("Addition:", a + b + c)
 
-
 obj = Calculator()
 
 # Calling with 2 arguments
@@ -257,18 +241,15 @@ class Animal:
     def sound(self):
         print("Animal makes sound")
 
-
 class Dog(Animal):
 
     def sound(self):
         print("Dog barks")
 
-
 class Cat(Animal):
 
     def sound(self):
         print("Cat meows")
-
 
 # Object creation
 d = Dog()

@@ -12,3 +12,4 @@ if __name__ == "__main__":
         subprocess.run([sys.executable, actual_app_path])
     else:
         print(f"Could not find the script at: {actual_app_path}")
+

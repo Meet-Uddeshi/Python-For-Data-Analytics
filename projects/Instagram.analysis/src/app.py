@@ -198,6 +198,10 @@ class InstagramDashboard:
         btn_apply = ttk.Button(f_frame, text="Apply Filters", command=self._draw_all)
         btn_apply.grid(row=0, column=8, padx=15)
 
+        # Export Button
+        btn_export = ttk.Button(top_frame, text="Export Output", command=self._on_export)
+        btn_export.pack(side=tk.RIGHT, padx=(10, 0))
+
         # Upload Button
         btn_upload = ttk.Button(top_frame, text="Upload CSV", command=self._on_upload)
         btn_upload.pack(side=tk.RIGHT)
@@ -237,6 +241,26 @@ class InstagramDashboard:
         if filepath:
             self._parse_csv(filepath)
             self._draw_all()
+
+    def _on_export(self):
+        import datetime
+        from tkinter import messagebox
+        output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'projects','Instagram.analysis','output')
+        output_dir = os.path.abspath(output_dir)
+        os.makedirs(output_dir, exist_ok=True)
+        
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # Save filtered data
+        df = self._get_filtered()
+        csv_path = os.path.join(output_dir, f"filtered_data_{timestamp}.csv")
+        df.to_csv(csv_path, index=False)
+        
+        # Save figure
+        fig_path = os.path.join(output_dir, f"dashboard_{timestamp}.png")
+        self.fig.savefig(fig_path, dpi=300, facecolor=self.fig.get_facecolor(), bbox_inches='tight')
+        
+        messagebox.showinfo("Export Successful", f"Results stored in:\n{output_dir}")
 
     def _update_kpis(self, df):
         metrics = [

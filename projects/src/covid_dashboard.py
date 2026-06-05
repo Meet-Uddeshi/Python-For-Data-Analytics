@@ -97,6 +97,7 @@ ax1.set_ylabel("")
 
 # ── FIX 1: wrap long country names so they never overlap ──
 wrapped = [textwrap.fill(lbl.get_text(), width=18) for lbl in ax1.get_yticklabels()]
+ax1.set_yticks(ax1.get_yticks())
 ax1.set_yticklabels(wrapped, fontsize=9.5)
 ax1.tick_params(axis='x', labelsize=10)
 ax1.yaxis.set_tick_params(pad=4)
@@ -215,6 +216,7 @@ ax4.set_ylabel("")
 ax4.tick_params(axis='y', labelsize=8.5, pad=4)
 ax4.tick_params(axis='x', labelsize=9)
 ax4.yaxis.set_tick_params(length=0)          # hide tick marks — saves space
+ax4.set_yticks(ax4.get_yticks())
 ax4.set_yticklabels(ax4.get_yticklabels(), linespacing=0.85)
 
 # Extra left margin for ax4 so wrapped text isn't clipped
@@ -222,5 +224,5 @@ ax4_pos = ax4.get_position()
 ax4.set_position([ax4_pos.x0 + 0.04, ax4_pos.y0,
                   ax4_pos.width - 0.04, ax4_pos.height])
 
-plt.savefig("C:/Users/Admin/Documents/Python-For-Data-Analytics/projects/src/covid_dashboard_fixed.png", dpi=150, bbox_inches='tight')
+plt.savefig(os.path.join(current_dir, "covid_dashboard_fixed.png"), dpi=150, bbox_inches='tight')
 plt.show()

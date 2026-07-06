@@ -1,0 +1,5 @@
+.venv
+.python-version
+data
+.idea
+__pycache__
